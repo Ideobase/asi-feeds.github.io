@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.hidden-row {
+  display: none;
+}
+
 a:hover {
   color: #73c5eb;
   text-decoration: none;

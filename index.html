@@ -46,7 +46,6 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#products">Products</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -100,8 +99,6 @@
     </div>
   </section><!-- End About Us Section -->
 
-
-
   <!-- ======= products Section ======= -->
   <section id="products" class="products section-bg">
     <div class="container" data-aos="fade-up">
@@ -111,22 +108,122 @@
         <p>Following are the products which we manufacture across in our factory.</p>
       </div>
 
-      <div class="row">
-        <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Cow Hay</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Cow feeds</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-          </div>
-        </div>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Sl.No</th>
+            <th scope="col">Compunded Feed for different Species</th>
+            <th scope="col">Mash</th>
+            <th scope="col">Pellet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Calf Starter Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Calf Grower Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Milch Cattle Feed (Type-I) (High Yielders)</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Milch Cattle Feed (Type-II) (Low to Medium Yielders)</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Dry Cattle Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Sheep Creep Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Sheep Grower Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Sheep Adult Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Fattening Lambs Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Goat Creep Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr class="hidden-row">
+            <th scope="row">11</th>
+            <td>Goat Grower Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr class="hidden-row">
+            <th scope="row">12</th>
+            <td>Goat Adult Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr class="hidden-row">
+            <th scope="row">13</th>
+            <td>Fattening kids Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr class="hidden-row">
+            <th scope="row">14</th>
+            <td>Country Chicken - Chick Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr class="hidden-row">
+            <th scope="row">15</th>
+            <td>Country Chicken - Grower Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr class="hidden-row">
+            <th scope="row">16</th>
+            <td>Country Chicken - Finisher Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr class="hidden-row">
+            <th scope="row">17</th>
+            <td>Country Chicken - Layer Feed</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex justify-content-center">
+        <button id="read-more-btn" class="btn btn-primary">Read More</button>
       </div>
     </div>
   </section><!-- End products Section -->
@@ -315,6 +412,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.getElementById('read-more-btn').addEventListener('click', function () {
+      const hiddenRows = document.querySelectorAll('.hidden-row');
+      hiddenRows.forEach(row => row.style.display = 'table-row');
+      this.style.display = 'none'; // Hide the button after all rows are displayed
+    });
+  </script>
 
 </body>
 
